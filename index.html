@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Loan PayBack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="loan.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="skeleton.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <style>
+  #loading, #results {
+    display: none;
+  }
+    </style>
+
+  <script src="loan.js"></script>
+</head>
+<body>
+  <div class="card card-3">
+    <div class="header">Loan Processor</div>
+    <form id="loan-form">
+      <div class="row">
+        <div class="twelve columns">
+            <label for="interest">Loan Amount</label>
+            <input class="u-full-width" type="text" placeholder="Loan Amount" id="loanAmount">
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <label for="interest">Interest</label>
+          <input class="u-full-width" type="text" placeholder="Interest Rate" id="interest">
+        </div>
+        <div class="six columns">
+              <label for="years">Years</label>
+              <input class="u-full-width" type="text" placeholder="Years" id="years">
+            </div>
+        </div>
+      <input class="button-primary twelve columns" type="submit" value="Submit">
+      <div id="loading" class="loading">
+        <i class="fa fa-spin fa-2x fa-spinner">
+        </i>
+      </div>
+        <div class="row">
+            <div id="results">
+                <div class="results-header">
+                  Results
+                </div>
+                <div class="twelve columns">
+                    <label for="interest">Monthly Payment</label>
+                    <input class="u-full-width" type="text" placeholder="Monthly Payment" id="monthlyPayment" disabled>
+                </div>
+
+                <div class="twelve columns">
+                    <label for="interest">Total Payment</label>
+                    <input class="u-full-width" type="text" placeholder="Total Payment" id="totalPayment" disabled>
+                </div>
+
+                <div class="twelve columns">
+                    <label for="interest">Total Interest</label>
+                    <input class="u-full-width" type="text" placeholder="Total Interest" id="totalInterest" disabled>
+                </div>
+        
+              </div>
+        </div>
+     
+    </form>
+  </div>
+  <script src="loan.js"></script>
+</body>
+</html>

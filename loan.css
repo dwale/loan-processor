@@ -1,0 +1,52 @@
+html {
+  font-family: Raleway; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  background: #e2e1e0;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  height: auto;
+  margin: 1rem;
+  position: relative;
+  width: 500px;
+
+}
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding: 30px;
+}
+#results {
+  
+}
+.results-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+.error-alert {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  z-index: 999;
+  top: 0;
+  background-color: rgb(226, 55, 55);
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
